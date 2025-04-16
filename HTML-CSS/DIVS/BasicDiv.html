@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div-Semantic-Layout</title>
+    <style>
+      .container {
+        border: 1px solid;
+      }
+      div#header {
+        background: black;
+        color: white;
+        margin: 10px;
+      }
+      #header h1 {
+        text-align: center;
+        padding: 10px;
+      }
+      div#midParent {
+        margin: 0 10px 0 10px;
+        overflow: auto;
+      }
+      div#listSec {
+        width: 150px;
+        float: left;
+        background: gray;
+      }
+      ul {
+        padding: 0;
+        list-style-type: none;
+        line-height: 2;
+      }
+      .contentSec {
+        width: 676px;
+      }
+      div#footer {
+        background: black;
+        color: white;
+        margin: 0 10px 0 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="header"><h1>Chittoor District</h1></div>
+      <div id="midParent">
+        <div id="listSec">
+          <ul>
+            <li>Chittoor</li>
+            <li>Kanipakam</li>
+            <li>Santhapet</li>
+            <li>Palamamer</li>
+          </ul>
+        </div>
+        <div class="contentSec">
+          <h2>Chittoor</h2>
+          <p>
+            Chittoor is a city and district headquarters in Chittoor district of
+            the Indian state of Andhra Pradesh. It is also the mandal and
+            divisional headquarters of ..
+          </p>
+        </div>
+      </div>
+      <div id="footer">
+        <p>@Chittoor District Detaisls</p>
+      </div>
+    </div>
+  </body>
+</html>
