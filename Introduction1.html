@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="myDiv"></div>
+    <div></div>
+    <script src="./Intro.js"></script>
+    <script>
+      // Javascript can create the HTML Elements and var key word
+
+      var myHeading = document.createElement("h1");
+      document.body.appendChild(myHeading);
+      myHeading.innerHTML = "Hello From Javascript";
+
+      // How Many We can Access the html Elements
+
+      //   document.querySelector("div").innerHTML = "Iam From Queryselector";
+      document.getElementById("myDiv").innerHTML = "Iam From GetElementbyid";
+      document.querySelector("div").setAttribute("class", "demo1");
+      document.getElementById("myDiv").style.color = "red";
+
+      //   How many ways we can display message in browser
+
+      document.write("Namasthe Javascript");
+      console.log("Welcome to Javascript");
+
+      //   PopUp Boxes
+
+      //   alert("Hi Iam From Alert");
+      //   prompt("Do you want to enter anything");
+      //   confirm("Conform yes or no");
+    </script>
+  </body>
+</html>
