@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="fullName"></h1>
+    <!-- Primitive DataTypes 
+     1.Strings a....z
+     2. Numbers 0....9
+     3.Boolen Values True or False
+     4. Null
+     5. Undefind
+     -->
+
+    <script>
+      var a = 20;
+      var b = 10;
+      var result = a + b;
+
+      console.log(result);
+      document.write((result = a + b + "<br>"));
+
+      var fName = "Pavan";
+      var lName = "Kumar";
+      var fullName = fName + lName;
+
+      console.log(fullName);
+      document.write(fullName);
+
+      document.getElementById("fullName").innerHTML = fullName;
+    </script>
+  </body>
+</html>
