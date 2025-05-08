@@ -10,9 +10,24 @@
     <script>
       var fruits = ["Apple", "Orange", "Mango", "Graps", "Sapota"];
 
-      for (i = 0; i < fruits.length; i++) {
-        console.log(fruits[i]);
-      }
+      // Array Methods
+      // fruits.push("Lichi"); //push will add the value at the end of the array
+      // fruits.unshift("WaterMelon"); //Unshift will add the value at the begining of the array
+      // fruits.splice(3, 1, "Banana"); // the first argument will represent the index posotion , second argument represent how many values to be removed, third argument represent to be replaced
+
+      // fruits.pop(); // will remove the value at the end of the array
+      // fruits.shift(); // will remove value at the begining of the array
+      // fruits.splice(4, 1); //will remove the value at the given index position
+
+      // fruits.sort(); // will arrange in ascending order
+      // fruits.sort().reverse(); //will reverce the array
+
+      document.write(fruits[0] + "<br>" + fruits[1]);
+      document.writeln(fruits.length);
+
+      // for (i = 0; i < fruits.length; i++) {
+      //   console.log(fruits[i]);
+      // }
 
       document.write(fruits);
       document.getElementById("myUl").innerHTML = fruits;
