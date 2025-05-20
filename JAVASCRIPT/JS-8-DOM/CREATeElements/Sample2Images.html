@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="myDiv"></div>
+    <script>
+      var imageAddress = [
+        "https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/blt134818d279038650/6668df6434f6fb5cd48aac34/beautiful-flowers-rose.jpeg?q=70&width=3840&auto=webp",
+        "https://images.unsplash.com/photo-1586082207282-3dcb61d25ebd?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9zZSUyMGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?cs=srgb&dl=pexels-jonaskakaroto-736230.jpg&fm=jpg",
+        "https://m.media-amazon.com/images/I/61IzHdY1YSL.jpg",
+        "https://hips.hearstapps.com/hmg-prod/images/close-up-of-blossoming-rose-flower-royalty-free-image-1580853844.jpg?crop=0.668xw:1.00xh;0.248xw,0&resize=980:*",
+        "https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/blt5f18c2119ce26485/6668df65db90945e0caf9be6/beautiful-flowers-lotus.jpg?q=70&width=3840&auto=webp",
+        "https://im.whatshot.in/img/2018/Aug/kashmir-cropped-1533732603.jpg?wp=1",
+      ];
+
+      imageAddress.forEach(function (flower) {
+        console.log(flower);
+        var myImage = document.createElement("img");
+        myImage.setAttribute("src", flower);
+        myImage.setAttribute("width", "150px");
+        document.getElementById("myDiv").appendChild(myImage);
+      });
+    </script>
+  </body>
+</html>

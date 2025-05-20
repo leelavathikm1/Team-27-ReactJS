@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="myUl"></ul>
+    <script>
+      var students = ["Pavan", "Leela", "Ram", "Ravi", "Kalyan"];
+
+      for (i = 0; i < students.length; i++) {
+        console.log(students[i]);
+
+        var myLi = document.createElement("li");
+        myLi.innerHTML = students[i];
+        document.getElementById("myUl").appendChild(myLi);
+      }
+    </script>
+  </body>
+</html>
