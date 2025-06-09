@@ -143,13 +143,46 @@
     </div>
 
     <script>
+      var allStudents=JSON.parse(localStorage.getItem("allStudents")) || []
+
+      function  displayStudents(){
+      let tableBody=document.getElementById("studentTableBody");
+        tableBody.innerHTML="";
+      allStudents.forEach((std)=>{
+        let row=tableBody.insertRow()
+        Object.values(std).forEach((val)=>{
+          let cell=row.insertCell()
+          cell.textContent=val
+        })
+        // let actionCell =row.insertCell()
+      })
+
+      }
+      
+
+
         function validateForm(){
             var fields=["id","name","age","gender","coursesEnrolled","enrollmentDate"]
 
             var isValed=fields.every(
                 (field)=>document.getElementById(field).value.trim() !==""
-            )
+            );
             document.querySelector("button").disabled=!isValed
+        }
+
+        function addStudent(){
+          let student={
+            id:document.getElementById("id").value,
+            name:document.getElementById("name").value,
+            age:document.getElementById("gender").value,
+            course:document.getElementById("coursesEnrolled").value,
+            date:document.getElementById("enrollmentDate").value,
+          };
+          allStudents.push(student);
+          localStorage.setItem("allStudents",JSON.stringify(allStudents))
+          displayStudents();
+          document.getElementById("enrollmentForm").reset();
+          document.querySelector("button").disabled=true
         }
     </script>
 </body>
