@@ -9,40 +9,42 @@
     <input type="text" id="searchField" onkeyup="handleSearch()" />
     <ul id="userList"></ul>
     <script>
-      var showTimer;
+      var bounceTimer;
       function handleSearch() {
-        showTimer = setTimeout(function () {
+        bounceTimer = setTimeout(function () {
           var userInput = document.getElementById("searchField").ariaValueMax;
           getData(userInput);
         }, 1000);
-        console.log(showTimer);
+
+        console.log(bounceTimer);
       }
 
       function getData(userInput) {
-        var getUserDetails = new XMLHttpRequest();
-        getUserDetails.onreadystatechange = function () {
+        var getDataDetails = new XMLHttpRequest();
+        getDataDetails.onreadystatechange = function () {
           if (
-            getUserDetails.readyState === 4 &&
-            getUserDetails.status === 200
+            getDataDetails.readyState === 4 &&
+            getDataDetails.status === 200
           ) {
-            var allUsers = JSON.parse(getUserDetails.response);
+            var allUsers = JSON.parse(getDataDetails.response);
+            displayUsers(allUsers);
           }
         };
-        getUserDetails.open(
+        getDataDetails.open(
           "GET",
           "https://jsonplaceholder.typicode.com/users?=q=" + userInput
         );
-        getUserDetails.send();
+        getDataDetails.send();
       }
 
       function displayUsers(users) {
         var userList = document.getElementById("userList");
-        userList.innerHTML = "";
+        userList.innerHTML = ""; // It Will Clear Previous Data
 
         users.forEach((user) => {
-          var listItem = document.createElement("li");
-          listItem.textContent = `${user.name}-${user.email}`;
-          userList.appendChild(listItem);
+          var litstItem = document.createElement("li");
+          litstItem.textContent = `${user.name}- ${user.email}`;
+          userList.appendChild(litstItem);
         });
       }
     </script>
