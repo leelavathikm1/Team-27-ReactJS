@@ -9,9 +9,9 @@
     <input type="text" id="searchField" onkeyup="handleSearch()" />
     <ul id="userList"></ul>
     <script>
-      var bounceTimer;
+      var showTimer;
       function handleSearch() {
-        bounceTimer = setTimeout(function () {
+        showTimer = setTimeout(function () {
           var userInput = document.getElementById("searchField").ariaValueMax;
           getData(userInput);
         }, 1000);
