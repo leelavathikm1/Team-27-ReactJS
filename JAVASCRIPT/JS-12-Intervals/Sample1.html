@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="stopInterval()">Stop-Function</button>
+    <script>
+      function helloIntervals() {
+        console.log("Welcom to JS Intervals");
+      }
+      //   helloIntervals();
+      //   setTimeout(function () {
+      //     helloIntervals();
+      //   }, 2000);
+
+      var inter = setInterval(function () {
+        helloIntervals();
+      }, 3000);
+
+      function stopInterval() {
+        clearInterval(inter);
+      }
+    </script>
+  </body>
+</html>
