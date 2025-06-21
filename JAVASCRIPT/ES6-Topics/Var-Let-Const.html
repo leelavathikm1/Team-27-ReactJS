@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //SCOPE
+      // b & result global scope
+      var b = 20;
+      var a = 10;
+      var result;
+      function addNum() {
+        // a is a functional scope
+
+        result = a + b;
+        console.log(result);
+      }
+
+      function addNumTwo() {
+        // result = a + b;
+        result = english + maths;
+        console.log(result);
+      }
+      addNum();
+      addNumTwo();
+
+      function addMarks() {
+        let english = 50,
+          maths = 60;
+        result = english + maths;
+        console.log(result);
+      }
+      addMarks();
+
+      //= , == , ===
+
+      //= It will assign avalue to a variable Assignment Operator
+      //== it will comare a value and it will ignore the data types
+      //=== it will comare both value and type
+    </script>
+  </body>
+</html>
