@@ -14,4 +14,10 @@ let name1 = "Pavan";
 let name2 = "Kumar";
 console.log(name1 + " " + name2, `${name1} `);
 
-//Ternary Operator
+//Ternary Operator ?
+
+function checkEveNum(val) {
+  return val % 2 === 0 ? "Even" : "Odd";
+}
+console.log(checkEveNum(7), checkEveNum(10));
+// console.log(first);
