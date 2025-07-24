@@ -10,6 +10,7 @@ import {
   VMRClassComp,
 } from "./COMPONENTS/LeelaClassComp";
 import Employee from "./COMPONENTS/Employee";
+import User from "./COMPONENTS/User";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,7 +23,8 @@ function App() {
         {/* <LeelaClassComp />
         <KumarClassComp />
         <VMRClassComp /> */}
-        <Employee />
+        {/* <Employee /> */}
+        <User />
       </div>
     </>
   );
