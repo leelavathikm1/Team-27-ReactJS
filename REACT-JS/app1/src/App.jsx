@@ -24,7 +24,7 @@ function App() {
         <KumarClassComp />
         <VMRClassComp /> */}
         {/* <Employee /> */}
-        <User />
+        {/* <User /> */}
       </div>
     </>
   );
