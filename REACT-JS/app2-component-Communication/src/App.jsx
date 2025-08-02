@@ -4,6 +4,8 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import ParentComp from "./Component-Communication/ParentComp";
 import StudentComp from "./Component-Communication/StudentComp";
+import UserClass from "./Component-Communication/UserClass";
+import ToggleButton from "./Component-Communication/ToggleButton";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,7 +14,9 @@ function App() {
     <>
       <div>
         {/* <ParentComp /> */}
-        <StudentComp />
+        {/* <StudentComp /> */}
+        {/* <UserClass /> */}
+        <ToggleButton />
       </div>
     </>
   );
