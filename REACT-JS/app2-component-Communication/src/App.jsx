@@ -6,6 +6,7 @@ import ParentComp from "./Component-Communication/ParentComp";
 import StudentComp from "./Component-Communication/StudentComp";
 import UserClass from "./Component-Communication/UserClass";
 import ToggleButton from "./Component-Communication/ToggleButton";
+import ParentTwo from "./Component-Communication/ParentTwo";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,7 +17,8 @@ function App() {
         {/* <ParentComp /> */}
         {/* <StudentComp /> */}
         {/* <UserClass /> */}
-        <ToggleButton />
+        {/* <ToggleButton /> */}
+        <ParentTwo />
       </div>
     </>
   );
