@@ -8,7 +8,6 @@ import UserClass from "./Component-Communication/UserClass";
 import ToggleButton from "./Component-Communication/ToggleButton";
 import ParentTwo from "./Component-Communication/ParentTwo";
 import SiblingComp from "./Component-Communication/SiblingComp";
-import UserTable from "./Component-Communication/UserTable";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,7 +21,6 @@ function App() {
         {/* <ToggleButton /> */}
         {/* <ParentTwo /> */}
         {/* <SiblingComp /> */}
-        <UserTable />
       </div>
     </>
   );
