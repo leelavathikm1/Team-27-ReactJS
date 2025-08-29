@@ -3,13 +3,15 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import UserTable from "./Components/UserTable";
+import UserCrud from "./Components/UserCrud";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div>
-      <UserTable />
+      {/* <UserTable /> */}
+      <UserCrud />
     </div>
   );
 }
