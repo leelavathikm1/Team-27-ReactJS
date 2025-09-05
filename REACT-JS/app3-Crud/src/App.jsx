@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import UserTable from "./Components/UserTable";
 import UserCrud from "./Components/UserCrud";
+import UserCrudValidation from "./Components/UserCrudValidation";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,7 +12,8 @@ function App() {
   return (
     <div>
       {/* <UserTable /> */}
-      <UserCrud />
+      {/* <UserCrud /> */}
+      <UserCrudValidation />
     </div>
   );
 }
