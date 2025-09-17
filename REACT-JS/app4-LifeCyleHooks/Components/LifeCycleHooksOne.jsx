@@ -11,6 +11,7 @@ export default class LifeCycleHooksOne extends Component {
 
   static getDerivedStateFromProps() {
     console.log("Iam From getDerivedStateFromProps");
+    return null;
   }
   render() {
     console.log("Iam From Render Method");
