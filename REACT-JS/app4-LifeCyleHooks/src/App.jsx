@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import LifeCycleHooksOne from "../Components/LifeCycleHooksOne";
 import LifecycleHooksDemo from "../Components/LifecycleHooksDemo";
+import LifecycleBDemo from "../Components/LifecycleBDemo";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,7 +12,8 @@ function App() {
   return (
     <>
       {/* <LifeCycleHooksOne /> */}
-      <LifecycleHooksDemo age={10} />
+      {/* <LifecycleHooksDemo age={10} /> */}
+      <LifecycleBDemo />
     </>
   );
 }
