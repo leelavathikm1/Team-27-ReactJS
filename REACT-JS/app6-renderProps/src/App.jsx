@@ -25,24 +25,24 @@ function App() {
       /> */}
 
       <HandleCounter
-        render={(count, incrementCount, decrementCount, resetCount) => {
+        render={(count, incrementCount, decrementCount, resetCount) => (
           <ClickCounter
             count={count}
             incrementCount={incrementCount}
             decrementCount={decrementCount}
             resetCount={resetCount}
-          />;
-        }}
+          />
+        )}
       />
       <HandleCounter
-        render={(count, incrementCount, decrementCount, resetCount) => {
+        render={(count, incrementCount, decrementCount, resetCount) => (
           <HoverCounter
             count={count}
             incrementCount={incrementCount}
             decrementCount={decrementCount}
             resetCount={resetCount}
-          />;
-        }}
+          />
+        )}
       />
     </>
   );
