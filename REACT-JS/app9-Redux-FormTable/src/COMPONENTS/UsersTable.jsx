@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function UsersTable({ users }) {
+export default function UsersTable({ displyUsers }) {
   return (
     <div style={{ padding: "20px" }}>
       <h2>User List</h2>
@@ -20,7 +20,7 @@ export default function UsersTable({ users }) {
         </thead>
 
         <tbody>
-          {users.map((user) => (
+          {displyUsers.map((user) => (
             <tr key={user.id}>
               <td>{user.id}</td>
               <td>{user.name}</td>

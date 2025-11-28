@@ -9,7 +9,7 @@ const Users = () => {
   return (
     <div>
       <h2>Welcome To UserFormTable</h2>
-      {/* <UsersTable /> */}
+      <UsersTable displyUsers={userDetails} />
     </div>
   );
 };
