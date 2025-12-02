@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+
 const initialUsers = {
   usersArry: [
     {
@@ -43,10 +44,31 @@ const initialUsers = {
     },
   ],
 };
+
 export const userSlice = createSlice({
   name: "users",
   initialState: initialUsers,
-  //   reducers: {},
+
+  reducers: {
+    createUserAction: (state, action) => {
+      action.payload.id = state.usersArry.length + 1;
+      state.usersArry.push(action.payload);
+    },
+    updateUserAction: () => {},
+    deleteUserAction: (state, action) => {
+      console.log(action.payload);
+      state.usersArry = state.usersArry.filter((user) => {
+        return user.id !== action.payload.id;
+      });
+    },
+    getAllUsersAction: () => {},
+  },
 });
 
+export const {
+  createUserAction,
+  updateUserAction,
+  deleteUserAction,
+  getAllUsersAction,
+} = userSlice.actions;
 export default userSlice.reducer;

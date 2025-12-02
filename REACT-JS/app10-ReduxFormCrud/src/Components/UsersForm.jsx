@@ -10,24 +10,19 @@ export default class UsersForm extends Component {
       city: "",
     },
   };
-
   handleChange = (e) => {
-    // console.log(e.target.value);
     const newUser = { ...this.state.user };
     newUser[e.target.name] = e.target.value;
     this.setState({ user: newUser });
   };
-
   handleSubmit = () => {
-    console.log(addUser);
     this.props.addUser(this.state.user);
   };
-
   render() {
     return (
       <div>
         <form>
-          <label htmlFor="">Name : </label>
+          <label htmlFor="">Name :</label>
           <input
             type="text"
             name="name"
@@ -35,29 +30,29 @@ export default class UsersForm extends Component {
             onChange={(e) => {
               this.handleChange(e);
             }}
-          />
+          />{" "}
           <br />
-          <label htmlFor="">Email : </label>
+          <label htmlFor="">Email :</label>
           <input
-            type="email"
+            type="text"
             name="email"
             value={this.state.user.email}
             onChange={(e) => {
               this.handleChange(e);
             }}
-          />
+          />{" "}
           <br />
-          <label htmlFor="">Age : </label>
+          <label htmlFor="">Age :</label>
           <input
-            type="number"
+            type="text"
             name="age"
             value={this.state.user.age}
             onChange={(e) => {
               this.handleChange(e);
             }}
-          />
+          />{" "}
           <br />
-          <label htmlFor="">Role : </label>
+          <label htmlFor="">Role :</label>
           <input
             type="text"
             name="role"
@@ -65,9 +60,9 @@ export default class UsersForm extends Component {
             onChange={(e) => {
               this.handleChange(e);
             }}
-          />
+          />{" "}
           <br />
-          <label htmlFor="">City : </label>
+          <label htmlFor="">City :</label>
           <input
             type="text"
             name="city"
@@ -75,7 +70,7 @@ export default class UsersForm extends Component {
             onChange={(e) => {
               this.handleChange(e);
             }}
-          />
+          />{" "}
           <br />
           <button type="button" onClick={this.handleSubmit}>
             Add User
