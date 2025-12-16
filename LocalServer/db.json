@@ -1,3 +1,40 @@
 {
-    "users":[]
+  "users": [
+    {
+      "fname": "anjali",
+      "lname": "v",
+      "email": "anjali@gmail.com",
+      "id": 1
+    },
+    {
+      "fname": "Leelavathi",
+      "lname": "km",
+      "email": "leelavathikm1@gmail.com",
+      "id": 2
+    },
+    {
+      "fname": "Pavan",
+      "lname": "kumar",
+      "email": "pavan@gmail.com",
+      "id": 3
+    },
+    {
+      "fname": "gayathri",
+      "lname": "vm",
+      "email": "gayathri@gmail.com",
+      "id": 4
+    },
+    {
+      "fname": "Leelavathi",
+      "lname": "km",
+      "email": "leelavathikm1@gmail.com",
+      "id": 5
+    },
+    {
+      "fname": "ravindra",
+      "lname": "krishna",
+      "email": "ravi@gmail.com",
+      "id": 6
+    }
+  ]
 }
